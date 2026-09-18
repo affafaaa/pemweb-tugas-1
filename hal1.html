@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Recs</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #dff5ed;
+        text-align: center;
+        padding-top: 100px;
+      }
+      h1 {
+        color: #845d3e;
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 1.1rem;
+        color: #333;
+        margin-bottom: 20px;
+      }
+      .form-container {
+        margin-top: 20px;
+      }
+      select {
+        padding: 10px 15px;
+        font-size: 1rem;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-right: 10px;
+        background-color: white;
+        cursor: pointer;
+      }
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ff4757;
+        color: white;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background-color: #ff6b81;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Movie Recs 🎥</h1>
+    <p>Rekomendasi film super bagus mantap</p>
+
+    <!-- Dropdown Pilihan Genre -->
+    <div class="form-container">
+      <select id="genreSelect">
+        <option value="hal2.html">Genre Fantasy</option>
+        <option value="hal3.html">Genre Romcom</option>
+      </select>
+      <button class="btn" onclick="goToPage()">Go</button>
+    </div>
+
+    <!-- Script JavaScript untuk Navigasi -->
+    <script>
+      function goToPage() {
+        var select = document.getElementById("genreSelect");
+        var selectedPage = select.value;
+        // Mengarahkan browser ke file halaman yang dipilih
+        window.location.href = selectedPage;
+      }
+    </script>
+  </body>
+</html>

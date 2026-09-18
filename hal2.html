@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fantasy Movies</title>
+    <!-- Hubungkan ke Bootstrap CSS agar card otomatis rapi -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      body {
+        background-color: #775b89;
+        padding: 40px 20px;
+      }
+      h2 {
+        color: #aec891;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+      .card {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+      }
+      .card-img-top {
+        width: 100%;
+        height: 220px; /* Tinggi dikurangi sedikit supaya lebih pas */
+        object-fit: contain; /* Agar seluruh gambar poster terlihat utuh */
+        background-color: #ffffff; /* Latar belakang sisa ruang jadi warna putih (menyatu dengan card) */
+        padding: 5px; /* Memberi sedikit jarak di dalam */
+      }
+      .navigation {
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container text-center">
+      <h2>Fantasy Movies</h2>
+
+      <div class="row justify-content-center g-4">
+        <div class="col-md-4 col-sm-6">
+          <div class="card mx-auto" style="width: 18rem">
+            <img src="Alice.jpg" class="card-img-top" alt="Poster Film Alice" />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Alice in Wonderland</h5>
+              <p class="card-text">Seorang gadis tersesat di dunia fantasi absurd penuh makhluk aneh.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card mx-auto" style="width: 18rem">
+            <img src="Bigfish.jpg" class="card-img-top" alt="Poster Film Bigfish" />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Big Fish</h5>
+              <p class="card-text">Anak berusaha mengungkap kebenaran di balik dongeng hidup ayahnya.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card mx-auto" style="width: 18rem">
+            <img src="Frankenstein.jpg" class="card-img-top" alt="Poster Film" />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Frankenstein</h5>
+              <p class="card-text">Tragedi kelam tentang makhluk buatan yang mencari jati diri dan penerimaan dari penciptanya.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Baris 2 (Isi 3 Card tambahan) -->
+      <div class="row justify-content-center g-4 mt-2">
+        <div class="col-md-4 col-sm-6">
+          <div class="card mx-auto" style="width: 18rem">
+            <img src="Narnia.jpg" class="card-img-top" alt="Poster Film" />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">The Chronicles of Narnia</h5>
+              <p class="card-text">Empat bersaudara melintasi lemari ajaib demi membebaskan dunia fantasi dari penyihir jahat.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card mx-auto" style="width: 18rem">
+            <img src="Peregrines.jpg" class="card-img-top" alt="Poster Film" />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Miss Peregrine's Home for Peculiar Children</h5>
+              <p class="card-text">Seorang remaja menemukan rumah rahasia anak-anak ajaib.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card mx-auto" style="width: 18rem">
+            <img src="Pinocchio.jpg" class="card-img-top" alt="Poster Film" />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Guillermo del Toro's Pinocchio</h5>
+              <p class="card-text">Kisah klasik tentang boneka yang ingin menjadi anak yang baik.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tombol Navigasi Kembali ke Home -->
+      <div class="navigation">
+        <a href="index.html" class="btn btn-danger px-4 py-2 fw-bold">Kembali ke Home</a>
+      </div>
+    </div>
+  </body>
+</html>
